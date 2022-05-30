@@ -13,7 +13,7 @@ const buildLoginForm = (overrides) => {
   };
 };
 
-test("form to alert username and password when submitted", () => {
+test("form to be submitted with username and password", () => {
   const handleSubmit = jest.fn();
   render(<Form onSubmit={handleSubmit} />);
   const { username, password } = buildLoginForm();
